@@ -1,0 +1,47 @@
+test_address_invalid (test_shop.ShopTest.test_address_invalid) ... ok
+test_cancel_restore_once (test_shop.ShopTest.test_cancel_restore_once) ... ok
+test_catalog_search (test_shop.ShopTest.test_catalog_search) ... ok
+test_checkout_idempotent (test_shop.ShopTest.test_checkout_idempotent) ... ok
+test_checkout_total_and_reservation (test_shop.ShopTest.test_checkout_total_and_reservation) ... ok
+test_concurrent_last_unit (test_shop.ShopTest.test_concurrent_last_unit) ... ok
+test_delivery_flow (test_shop.ShopTest.test_delivery_flow) ... ok
+test_delivery_skip_rejected (test_shop.ShopTest.test_delivery_skip_rejected) ... ok
+test_empty_cart (test_shop.ShopTest.test_empty_cart) ... ok
+test_foreign_key (test_shop.ShopTest.test_foreign_key) ... ok
+test_http_admin_delivery (test_shop.ShopTest.test_http_admin_delivery) ... ok
+test_http_admin_denied (test_shop.ShopTest.test_http_admin_denied) ... ok
+test_http_cart (test_shop.ShopTest.test_http_cart) ... ok
+test_http_checkout_render (test_shop.ShopTest.test_http_checkout_render) ... ok
+test_http_csrf (test_shop.ShopTest.test_http_csrf) ... ok
+test_http_customer_required (test_shop.ShopTest.test_http_customer_required) ... ok
+test_http_headers (test_shop.ShopTest.test_http_headers) ... ok
+test_http_inactive_cart_recovery (test_shop.ShopTest.test_http_inactive_cart_recovery) ... ok
+test_http_logout (test_shop.ShopTest.test_http_logout) ... ok
+test_http_order_isolation (test_shop.ShopTest.test_http_order_isolation) ... ok
+test_http_pages (test_shop.ShopTest.test_http_pages) ... ok
+test_http_register_mismatch (test_shop.ShopTest.test_http_register_mismatch) ... ok
+test_http_xss (test_shop.ShopTest.test_http_xss) ... ok
+test_login_invalid (test_shop.ShopTest.test_login_invalid) ... ok
+test_login_success (test_shop.ShopTest.test_login_success) ... ok
+test_other_customer_isolation (test_shop.ShopTest.test_other_customer_isolation) ... ok
+test_paid_cancel_rejected (test_shop.ShopTest.test_paid_cancel_rejected) ... ok
+test_payment_declined_retry (test_shop.ShopTest.test_payment_declined_retry) ... ok
+test_payment_duplicate_rejected (test_shop.ShopTest.test_payment_duplicate_rejected) ... ok
+test_payment_invalid (test_shop.ShopTest.test_payment_invalid) ... ok
+test_persistence (test_shop.ShopTest.test_persistence) ... ok
+test_product_inactive (test_shop.ShopTest.test_product_inactive) ... ok
+test_product_price_history (test_shop.ShopTest.test_product_price_history) ... ok
+test_product_validation (test_shop.ShopTest.test_product_validation) ... ok
+test_quantity_invalid (test_shop.ShopTest.test_quantity_invalid) ... ok
+test_registration_duplicate_case (test_shop.ShopTest.test_registration_duplicate_case) ... ok
+test_registration_hash (test_shop.ShopTest.test_registration_hash) ... ok
+test_registration_invalid_email (test_shop.ShopTest.test_registration_invalid_email) ... ok
+test_registration_short_password (test_shop.ShopTest.test_registration_short_password) ... ok
+test_restock_preserves_cancellation_capacity (test_shop.ShopTest.test_restock_preserves_cancellation_capacity) ... ok
+test_sql_injection (test_shop.ShopTest.test_sql_injection) ... ok
+test_stock_atomic (test_shop.ShopTest.test_stock_atomic) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 5.766s
+
+OK
