@@ -65,3 +65,16 @@ Todos os campos são NOT NULL, exceto as chaves primárias INTEGER cujo valor é
 |order_events|created_at|TEXT|Instante UTC do evento|
 
 Limites de formulários e validações no modelo complementam CHECK, NOT NULL, UNIQUE e FK do banco; não se afirma que toda regra semântica está em SQL. A cardinalidade mínima de um item/evento por pedido é assegurada pelo serviço transacional. As transições de estado são regras do modelo.
+
+## Diagrama conceitual com cardinalidades
+
+```mermaid
+erDiagram
+ CLIENTE ||--o{ PEDIDO : realiza
+ PEDIDO ||--|{ ITEM : contem
+ PRODUTO ||--o{ ITEM : compoe
+ PEDIDO ||--o{ PAGAMENTO : recebe
+ PEDIDO ||--|{ EVENTO : registra
+```
+
+Cada pedido pertence a um cliente e possui ao menos um item. Cada item referencia um produto. Um pedido pode ter nenhuma ou várias tentativas de pagamento; o índice parcial permite no máximo uma aprovação. O primeiro evento é criado na mesma transação do pedido. Endereço e preço são cópias históricas do momento da compra, preservadas quando os cadastros mudam.
