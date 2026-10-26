@@ -1,0 +1,127 @@
+test_address_invalid (test_shop.ShopTest.test_address_invalid) ... ok
+test_cancel_restore_once (test_shop.ShopTest.test_cancel_restore_once) ... ok
+test_catalog_search (test_shop.ShopTest.test_catalog_search) ... ok
+test_checkout_idempotent (test_shop.ShopTest.test_checkout_idempotent) ... ok
+test_checkout_total_and_reservation (test_shop.ShopTest.test_checkout_total_and_reservation) ... ok
+test_concurrent_last_unit (test_shop.ShopTest.test_concurrent_last_unit) ... ok
+test_delivery_flow (test_shop.ShopTest.test_delivery_flow) ... ok
+test_delivery_skip_rejected (test_shop.ShopTest.test_delivery_skip_rejected) ... ok
+test_empty_cart (test_shop.ShopTest.test_empty_cart) ... ok
+test_foreign_key (test_shop.ShopTest.test_foreign_key) ... ok
+test_http_admin_delivery (test_shop.ShopTest.test_http_admin_delivery) ... ERROR
+test_http_admin_denied (test_shop.ShopTest.test_http_admin_denied) ... ok
+test_http_cart (test_shop.ShopTest.test_http_cart) ... ok
+test_http_checkout_render (test_shop.ShopTest.test_http_checkout_render) ... ok
+test_http_csrf (test_shop.ShopTest.test_http_csrf) ... ok
+test_http_customer_required (test_shop.ShopTest.test_http_customer_required) ... ok
+test_http_headers (test_shop.ShopTest.test_http_headers) ... ok
+test_http_logout (test_shop.ShopTest.test_http_logout) ... ok
+test_http_order_isolation (test_shop.ShopTest.test_http_order_isolation) ... ok
+test_http_pages (test_shop.ShopTest.test_http_pages) ... ok
+test_http_register_mismatch (test_shop.ShopTest.test_http_register_mismatch) ... ok
+test_http_xss (test_shop.ShopTest.test_http_xss) ... ok
+test_login_invalid (test_shop.ShopTest.test_login_invalid) ... ok
+test_login_success (test_shop.ShopTest.test_login_success) ... ok
+test_other_customer_isolation (test_shop.ShopTest.test_other_customer_isolation) ... ok
+test_paid_cancel_rejected (test_shop.ShopTest.test_paid_cancel_rejected) ... ok
+test_payment_declined_retry (test_shop.ShopTest.test_payment_declined_retry) ... ok
+test_payment_duplicate_rejected (test_shop.ShopTest.test_payment_duplicate_rejected) ... ok
+test_payment_invalid (test_shop.ShopTest.test_payment_invalid) ... ok
+test_persistence (test_shop.ShopTest.test_persistence) ... ok
+test_product_inactive (test_shop.ShopTest.test_product_inactive) ... ok
+test_product_price_history (test_shop.ShopTest.test_product_price_history) ... ok
+test_product_validation (test_shop.ShopTest.test_product_validation) ... ok
+test_quantity_invalid (test_shop.ShopTest.test_quantity_invalid) ... ok
+test_registration_duplicate_case (test_shop.ShopTest.test_registration_duplicate_case) ... ok
+test_registration_hash (test_shop.ShopTest.test_registration_hash) ... ok
+test_registration_invalid_email (test_shop.ShopTest.test_registration_invalid_email) ... ok
+test_registration_short_password (test_shop.ShopTest.test_registration_short_password) ... ok
+test_sql_injection (test_shop.ShopTest.test_sql_injection) ... ok
+test_stock_atomic (test_shop.ShopTest.test_stock_atomic) ... ok
+
+======================================================================
+ERROR: test_http_admin_delivery (test_shop.ShopTest.test_http_admin_delivery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/tests/test_shop.py", line 96, in test_http_admin_delivery
+    oid=self.buy();m.pay(oid,self.uid,'pix','aprovado');self.post('/gestao/entrar',dict(password='admin-test-1234'));r=self.post(f'/gestao/pedido/{oid}',dict(expected='confirmado'));self.assertEqual(r.status_code,200);self.assertEqual(m.order(oid)['status'],'em preparo')
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/tests/test_shop.py", line 13, in post
+    return self.client.post(path,data=dict(csrf=token,**(data or {})),follow_redirects=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/werkzeug/test.py", line 1171, in post
+    return self.open(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/testing.py", line 235, in open
+    response = super().open(
+               ^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/werkzeug/test.py", line 1154, in open
+    response = self.resolve_redirect(response, buffered=buffered)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/werkzeug/test.py", line 1060, in resolve_redirect
+    return self.open(builder, buffered=buffered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/testing.py", line 235, in open
+    response = super().open(
+               ^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/werkzeug/test.py", line 1120, in open
+    response_parts = self.run_wsgi_app(request.environ, buffered=buffered)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/werkzeug/test.py", line 992, in run_wsgi_app
+    rv = run_wsgi_app(self.application, environ, buffered=buffered)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/werkzeug/test.py", line 1268, in run_wsgi_app
+    app_rv = app(environ, start_response)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/app/controllers.py", line 20, in wrapped
+    return fn(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/app/controllers.py", line 133, in admin
+    def admin():return render_template('orders.html',orders=m.db().execute('SELECT * FROM orders ORDER BY id DESC').fetchall(),admin=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/.venv/lib/python3.12/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/workspace/scratch/4c0fed45ab14/cupcakes/app/templates/orders.html", line 1, in template
+    {% extends 'base.html' %}{% block content %}<p class="eyebrow">{{'GESTÃO DA LOJA' if admin else 'ACOMPANHE SUA COMPRA'}}</p><h1>{{'Pedidos recebidos' if admin else 'Meus pedidos'}}</h1>{% if admin %}<a class="button" href="{{url_for('shop.admin_products')}}">Gerenciar produtos</a>{% endif %}{% for o in orders %}<article class="cart-row"><div><h2>Pedido #{{o.id}}</h2><p>{{o.created_at}} · {{o.status}}</p></div><a class="button secondary" href="{{url_for('shop.admin_order' if admin else 'shop.order',oid=o.id)}}">Ver pedido #{{o.id}}</a></article>{% else %}<p class="empty">Nenhum pedido por aqui ainda.</p>{% endif %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endfor'. The innermost block that needs to be closed is 'for'.
+
+----------------------------------------------------------------------
+Ran 40 tests in 4.807s
+
+FAILED (errors=1)
