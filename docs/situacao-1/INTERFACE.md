@@ -2,7 +2,7 @@
 
 ## Continuidade do protótipo entregue
 
-Preservados: título Doce Órbita, busca, listagem vertical de produtos e ação Comprar. Acrescentados: descrição, sabor, alergênicos, preço, estoque, navegação, carrinho, entrega, pagamento, histórico e gestão. A paleta rosa/creme e a ilustração SVG são decisões desta revisão; o PIT I tinha um wireframe sem paleta. Não se afirma fidelidade a telas inexistentes no documento original.
+O nome provisório Cupcake App foi atualizado para Doce Órbita. Preservados: busca, listagem vertical de produtos e ação Comprar. Acrescentados: descrição, sabor, alergênicos, preço, estoque, navegação, carrinho, entrega, pagamento, histórico e gestão. A paleta rosa/creme e a ilustração SVG são decisões desta revisão; o PIT I tinha um wireframe sem paleta. Não se afirma fidelidade a telas inexistentes no documento original.
 
 ## Mapa conceitual
 
@@ -32,8 +32,39 @@ Catálogo → Detalhe → Carrinho → Login/Cadastro (se necessário) → Carri
 
 ## Wireframes e mockups
 
-`prototipo.html` reúne esquemas de todas as telas e seus estados principais. Os templates executáveis e style.css são os mockups funcionais desta revisão, sujeitos à inspeção visual em navegador. Não há evidência visual de homologação ainda. O PDF Wireframes-Cupcake-App.pdf reúne os esquemas. Antes do aceite, exportar as telas definitivas para PDF ou apresentação conforme orientação do PIT I e incorporar às evidências.
+[Wireframes-Doce-Orbita.pdf](Wireframes-Doce-Orbita.pdf) apresenta 13 telas em quatro páginas. [Mockups-Doce-Orbita.pdf](Mockups-Doce-Orbita.pdf) apresenta as 13 telas em cores, com estados alternativos, em média fidelidade. `prototipo.html` é a fonte navegável dos esquemas. Os templates e CSS contêm a implementação executável. Catálogo em desktop e 390 px, cadastro, pedido, pagamento, gestão, persistência e cancelamento foram conferidos no navegador. Essa inspeção técnica não substitui as cinco avaliações reais.
 
 ## Critérios de usabilidade
 
 Layout responsivo em 650px, fluxo em coluna no celular, rótulos associados, títulos hierárquicos, pular para conteúdo, foco visível, botões≥46px, mensagens role=alert, estado expresso em texto, sem animação essencial. Ilustração decorativa tem alt vazio na lista e descrição no detalhe. Cancelamento possui confirmação dentro da página. HTTPS e sessão segura são exigências da hospedagem. Testar teclado,390px, zoom 200%, contraste e leitor de tela antes de declarar acessibilidade. Não há certificação WCAG.
+
+## Diagramas de informação e navegação
+
+```mermaid
+flowchart TD
+ L[Loja] --> P[Produtos]
+ C[Cliente] --> K[Carrinho]
+ P --> K
+ K --> O[Pedido]
+ O --> I[Itens e endereço]
+ O --> G[Pagamento simulado]
+ G --> E[Estado de entrega]
+ E --> H[Histórico de eventos]
+```
+
+```mermaid
+flowchart TD
+ A[Catálogo] --> B[Detalhes]
+ B --> C[Carrinho]
+ C --> D[Login ou cadastro]
+ D --> C
+ C --> E[Entrega e resumo]
+ E --> F[Pedido e pagamento]
+ F --> G[Meus pedidos]
+ G --> F
+ H[Login gestor] --> I[Pedidos recebidos]
+ I --> J[Detalhe e avanço da entrega]
+ H --> K[Produtos]
+ K --> L[Novo ou editar produto]
+ L --> K
+```
