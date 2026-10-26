@@ -11,7 +11,7 @@ Planejamento atualizado do Doce Órbita, continuidade do PIT I de Fabricio Felic
 5. [Modelo conceitual, lógico normalizado e dicionário de dados](situacao-1/DADOS.md).
 6. [Projeto físico executável](../app/schema.sql).
 7. [Interface, mapas e especificação das telas](situacao-1/INTERFACE.md).
-8. [Wireframes em PDF](situacao-1/Wireframes-Cupcake-App.pdf) e [fonte HTML](situacao-1/prototipo.html).
+8. [Wireframes em PDF](situacao-1/Wireframes-Doce-Orbita.pdf) , [mockups coloridos](situacao-1/Mockups-Doce-Orbita.pdf) e [fonte HTML](situacao-1/prototipo.html).
 9. [Manual de uso](situacao-2/MANUAL.md).
 10. [Verificação técnica](situacao-3/QUALIDADE.md) e [resultados](situacao-3/test-results.txt).
 
