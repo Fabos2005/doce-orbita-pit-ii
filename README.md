@@ -1,6 +1,6 @@
 # Doce Órbita
 
-Loja virtual de cupcakes para continuidade do PIT I e execução das três situações do PIT II. O escopo correto substitui o protótipo anterior de biblioteca. Projeto acadêmico com dados fictícios, pagamento e entrega simulados, sem cobrança.
+Loja virtual de cupcakes para continuidade do PIT I e execução das três situações do PIT II. Projeto acadêmico com dados fictícios, pagamento e entrega simulados, sem cobrança.
 
 ## Executar
 
@@ -33,7 +33,7 @@ Testar: `python -m unittest discover -s tests -v`. Resultados em docs/situacao-3
 
 ## Publicação gratuita
 
-Preparado para a conta PythonAnywhere existente, sem upgrade. Antes de substituir a aplicação, preservar código/banco antigos; enviar esta pasta para ~/cupcakes-pit-ii; criar ~/.config/cupcakes.json com SECRET_KEY, ADMIN_PASSWORD, DATABASE apontando para um NOVO banco cupcakes.sqlite e COOKIE_SECURE="1"; arquivo privado com permissão0600. Não reutilizar library.sqlite. Configurar o virtualenv, instalar requirements, copiar deploy/pythonanywhere_wsgi.py para o WSGI e recarregar. Verificar HTTPS, cadastro, pedido, pagamento, entrega e persistência após reinício. Conservar a renovação mensal gratuita. A aplicação foi publicada e verificada no navegador, incluindo persistência após reinício.
+Preparado para a conta PythonAnywhere existente, sem upgrade. Enviar esta pasta para ~/cupcakes-pit-ii; criar ~/.config/cupcakes.json com SECRET_KEY, ADMIN_PASSWORD, DATABASE apontando para o banco exclusivo cupcakes.sqlite e COOKIE_SECURE="1"; arquivo privado com permissão0600. Configurar o virtualenv, instalar requirements, copiar deploy/pythonanywhere_wsgi.py para o WSGI e recarregar. Verificar HTTPS, cadastro, pedido, pagamento, entrega e persistência após reinício. Conservar a renovação mensal gratuita. A aplicação foi publicada e verificada no navegador, incluindo persistência após reinício.
 
 Aplicação: https://fabrifeliciano.pythonanywhere.com/
 
