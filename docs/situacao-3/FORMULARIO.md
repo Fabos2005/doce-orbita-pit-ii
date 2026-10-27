@@ -1,6 +1,6 @@
 # Avaliação do Doce Órbita
 
-Formulário publicado para avaliações reais da loja de cupcakes. Não reutilizar respostas sobre EntrePáginas.
+Formulário publicado para avaliações reais da loja de cupcakes.
 
 Descrição: Estou avaliando meu projeto acadêmico de loja virtual de cupcakes. Use dados fictícios e senha exclusiva. Teste catálogo, busca, cadastro/login, carrinho, entrega, pedido, pagamento simulado e acompanhamento. Se possível, teste e-mail repetido, quantidade inválida, pagamento recusado e cancelamento de pedido pendente. Nenhuma cobrança ou entrega real é feita. As respostas serão usadas na documentação acadêmica. Capturas de falhas devem ser enviadas separadamente por WhatsApp sem senhas ou dados pessoais. Para testar o avanço da entrega, combine com o responsável pela gestão. Responda uma vez.
 
