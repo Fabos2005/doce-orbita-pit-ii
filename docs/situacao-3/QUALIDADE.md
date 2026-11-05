@@ -25,3 +25,7 @@ Depois: coletar cinco opiniões reais, PDF das avaliações, priorização de su
 Em 25/10/2026, foram verificados no Edge: cadastro, login, busca por Morango, inclusão no carrinho, endereço fictício, pagamento recusado e posteriormente aprovado, acompanhamento pela gestão nas etapas preparo/saída/entregue, persistência após reinício e logout. Um segundo pedido foi mantido na confirmação de cancelamento e depois cancelado com liberação do estoque. A página inicial foi inspecionada em desktop e viewport de 390 pixels. Esses testes técnicos não substituem as cinco avaliações externas.
 
 Na revisão do estoque foi identificada a possibilidade de editar o saldo livre para 9999 enquanto existiam reservas, impedindo sua restituição no cancelamento. A atualização do produto passa a validar saldo livre mais reservas pendentes em transação. Um teste reproduz a condição, verifica a rejeição e confirma cancelamento no limite. A suíte atual passa em 42 testes.
+
+## Reteste local após feedback — 05/11/2026
+
+Implementei as três melhorias concretas recebidas: mais cores, três novos sabores demonstrativos e saldo disponível no carrinho. Executei os 42 testes anteriores e cinco novos: **47 aprovados**. Registrei a saída em `test-results-feedback.txt` e a origem, decisões, proteção dos dados e pendências em [MELHORIAS-FEEDBACK.md](MELHORIAS-FEEDBACK.md). Ainda não executei a publicação nem os retestes visuais desta revisão na hospedagem; o login do PythonAnywhere está pendente. Não confundo testes locais com validação externa.
