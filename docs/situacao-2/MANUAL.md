@@ -2,8 +2,8 @@
 
 ## Cliente
 
-1. Abra o catálogo. Os três cupcakes iniciais são dados demonstrativos. Busque por nome ou sabor.
-2. Clique no nome para detalhes ou em Comprar para adicionar uma unidade. No carrinho, altere quantidades e use Atualizar; zero remove.
+1. Abra o catálogo. Os cupcakes são dados demonstrativos. A revisão de feedback acrescenta limão, coco e doce de leite aos três sabores iniciais após executar a ampliação do cardápio. Busque por nome ou sabor.
+2. Clique no nome para detalhes ou em Comprar para adicionar uma unidade. No carrinho, consulte “Disponível agora”, altere quantidades e use Atualizar; zero remove. Se o estoque diminuir, reduza a quantidade conforme o aviso. O saldo não é reservado pelo carrinho.
 3. Crie uma conta com nome/e-mail fictícios e senha exclusiva de 10–128 caracteres. Faça login. Cada cliente só enxerga os próprios pedidos.
 4. Volte ao carrinho e escolha Continuar para entrega. Informe endereço fictício completo. CEP tem 8 dígitos e UF válida. Confira produtos, frete deR$8,00 e total.
 5. Confirme o pedido. O sistema reserva estoque e abre o pagamento.
