@@ -4,6 +4,7 @@ Uso: python deploy/expand_catalog.py /caminho/cupcakes.sqlite
 O banco deve existir. Faz backup consistente antes de inserir os novos produtos.
 """
 import sqlite3
+from contextlib import closing
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,10 +22,10 @@ def expand_catalog(database):
     path = Path(database).resolve(strict=True)
     backup = path.with_name(path.name + '.before-feedback-' +
                             datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ') + '.bak')
-    with sqlite3.connect(str(path)) as conn:
+    with closing(sqlite3.connect(str(path))) as conn:
         # Valida o banco antes de qualquer gravação.
         conn.execute('SELECT id, name, stock FROM products LIMIT 0')
-        with sqlite3.connect(str(backup)) as target:
+        with closing(sqlite3.connect(str(backup))) as target:
             conn.backup(target)
         backup.chmod(0o600)
         conn.execute('BEGIN IMMEDIATE')
