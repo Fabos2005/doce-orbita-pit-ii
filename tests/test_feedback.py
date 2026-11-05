@@ -1,5 +1,6 @@
 """Regressões das sugestões reais; todos os dados são temporários."""
 import sqlite3
+from contextlib import closing
 import tempfile
 import unittest
 from pathlib import Path
@@ -27,7 +28,7 @@ class FeedbackTest(unittest.TestCase):
         self.assertEqual(inserted, 3)
         self.assertEqual(dict(m.product(1)), before)
         self.assertEqual(m.order(oid)['total'], order_before['total'])
-        with sqlite3.connect(backup) as conn:
+        with closing(sqlite3.connect(backup)) as conn:
             self.assertEqual(conn.execute('SELECT COUNT(*) FROM products').fetchone()[0], 3)
             self.assertEqual(conn.execute('SELECT COUNT(*) FROM orders').fetchone()[0], 1)
         m.db().execute('UPDATE products SET stock=7, active=0 WHERE name=?', ('Limão suave',)); m.db().commit()
