@@ -34,7 +34,11 @@ Os testes usam bancos temporários. Não equivalem a retestes dos participantes 
 
 ## Publicação e pendências
 
-**Alterações preparadas e testadas localmente; publicação no PythonAnywhere pendente de login.** Não declarei a versão pública atualizada. Ainda preciso comparar os arquivos e os dados atuais do servidor, fazer backup, aplicar a versão, executar a suíte no servidor, reiniciar e conferir catálogo/carrinho em desktop e celular.
+**Publiquei e verifiquei as três melhorias no PythonAnywhere em 05/11/2026.** Comparei 26 arquivos com a versão anterior, fiz backup privado do código e do banco e executei a suíte em uma cópia separada no servidor: 47 testes aprovados em 24,359 segundos. Confirmei que a ampliação preservou os produtos anteriores e as contagens de clientes, pedidos, itens, pagamentos e eventos. Reiniciei a aplicação e confirmei os seis produtos na URL pública.
+
+No Edge, verifiquei o catálogo em desktop e a 390 px, busca por Limão, inclusão no carrinho, atualização para duas unidades (subtotal R$ 25,80 e total R$ 33,80), saldo disponível de 30, recusa de 31 unidades, abertura do resumo de entrega e remoção por zero. Catálogo e carrinho apresentaram largura de conteúdo de 390 px, sem rolagem horizontal. Não criei pedido nem alterei o estoque com esses testes de navegador. As regras de pagamento e cancelamento foram exercitadas na suíte com banco temporário. Não afirmo auditoria completa de acessibilidade nem reteste dos participantes.
+
+Na primeira execução no servidor, a limpeza do banco temporário encontrou uma conexão SQLite ainda aberta. Corrigi o fechamento explícito com `contextlib.closing` na ampliação e no teste de backup. A tentativa falhou antes da publicação; repeti a suíte local e no servidor, com 47 aprovações. Preservei o registro da tentativa no diretório privado de staging. A versão anterior do site permaneceu ativa até o reteste passar.
 
 Preservei os PDFs de wireframes/mockups anteriores como evidência do planejamento. O detalhamento atualizado da interface está em `docs/situacao-1/INTERFACE.md`; os PDFs ainda não representam esta revisão de cores/cardápio. O Word final, PDF com as cinco opiniões e segundo vídeo continuam pendentes. O primeiro vídeo foi informado pelo aluno como gravado, com 9min35s; não o analisei. Não enviei nada à faculdade.
 
