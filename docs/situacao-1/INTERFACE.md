@@ -68,3 +68,7 @@ flowchart TD
  K --> L[Novo ou editar produto]
  L --> K
 ```
+
+## Revisão após feedback — 05/11/2026
+
+Ampliei as cores de apoio com fundos suaves e bordas por sabor, mantendo a estrutura de lista, busca e Comprar. Preparei limão, coco e doce de leite, com ilustrações próprias, preservando os três sabores iniciais. Na T05 acrescentei saldo livre atual por item e aviso de redução de estoque. As regras de reserva e as rotas permanecem as mesmas. Os PDFs anteriores registram a versão inicial; esta revisão está descrita em `../situacao-3/MELHORIAS-FEEDBACK.md` e nos templates/CSS. Inspecionei a versão publicada no Edge em desktop e 390 px: catálogo e carrinho sem rolagem horizontal, cores e ilustrações dos seis sabores, atualização de quantidade e saldo disponível. Não realizei certificação de acessibilidade.
