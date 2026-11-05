@@ -47,6 +47,6 @@ test_sql_injection (test_shop.ShopTest.test_sql_injection) ... ok
 test_stock_atomic (test_shop.ShopTest.test_stock_atomic) ... ok
 
 ----------------------------------------------------------------------
-Ran 47 tests in 6.753s
+Ran 47 tests in 14.392s
 
 OK
