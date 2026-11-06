@@ -1,4 +1,4 @@
-# Laudo preliminar de verificação
+# Laudo de verificação
 
 Objeto: Doce Órbita, versão reconstruída para a loja de cupcakes. Responsável: Fabricio Feliciano Cardoso. A verificação local não constitui validação pelos cinco participantes nem homologação da hospedagem.
 
@@ -14,9 +14,9 @@ A execução inicial falhou no cenário test_http_admin_delivery: o template ord
 
 Cadastro, hash, duplicidade, e-mail inválido, senha curta, login, catálogo/busca, quantidades, endereço, totais, reserva, concorrência, idempotência, cancelamento único, recusa/repetição de pagamento, aprovação única, propriedade do pedido, preços históricos, produto inativo, estado de entrega, chaves estrangeiras, injeção SQL, escape HTML, CSRF, autorização, logout, cabeçalhos e reabertura do banco foram exercitados pelos testes nomeados na saída.
 
-## Pendências de validação
+## Pendências na etapa inicial — histórico
 
-Publicação GitHub bloqueada por 403 da integração; controle de navegador indisponível para atualizar PythonAnywhere e Forms nesta sessão. Inspeção visual desktop/mobile, teclado, contraste e confirmação JavaScript não executada. Testar no servidor HTTPS, persistência após reinício e fluxo cliente/gestor antes de liberar para colegas. Pagamento e entrega são simulados e precisam ser apresentados assim ao tutor.
+Registro histórico, superado pelas verificações posteriores: publicação GitHub bloqueada por 403 da integração; controle de navegador indisponível para atualizar PythonAnywhere e Forms nesta sessão. Inspeção visual desktop/mobile, teclado, contraste e confirmação JavaScript não executada. Testar no servidor HTTPS, persistência após reinício e fluxo cliente/gestor antes de liberar para colegas. Pagamento e entrega são simulados e precisam ser apresentados assim ao tutor.
 
 Depois: coletar cinco opiniões reais, PDF das avaliações, priorização de sugestões, correções, retestes, evidências antes/depois, vídeo inicial e atualizado, Word final. Sem esses itens não se declara atendimento integral do PIT II. Nenhuma entrega acadêmica realizada nesta etapa.
 
@@ -29,3 +29,9 @@ Na revisão do estoque foi identificada a possibilidade de editar o saldo livre 
 ## Reteste local após feedback — 05/11/2026
 
 Implementei as três melhorias concretas recebidas: mais cores, três novos sabores demonstrativos e saldo disponível no carrinho. Executei os 42 testes anteriores e cinco novos: **47 aprovados**. Registrei a saída em `test-results-feedback.txt` e a origem, decisões, proteção dos dados e pendências em [MELHORIAS-FEEDBACK.md](MELHORIAS-FEEDBACK.md). Depois corrigi o fechamento explícito das conexões SQLite detectado na limpeza de um teste no servidor. Reexecutei os 47 testes com sucesso no servidor (24,359 s), fiz backup, publiquei e conferi o catálogo e carrinho em desktop e 390 px, busca, quantidades, recusa por estoque, resumo da entrega e remoção. Preservei os dados anteriores. Não confundo testes locais com validação externa.
+
+## Estado atual — 06/11/2026
+
+Cinco avaliações recebidas, três melhorias publicadas, Word preenchido e dois vídeos não listados com links no Word. A suíte foi novamente executada localmente: 47 testes aprovados. O PDF das cinco opiniões ainda precisa ser consolidado e conferido. A entrega acadêmica será realizada pelo aluno.
+
+Na revisão local adicional, três entradas anormais produziram HTTP 500: token CSRF com caracteres não ASCII, quantidade com milhares de dígitos e identificador numérico além do intervalo SQLite. Permanecem sem correção por decisão do responsável nesta entrega; não foram testadas contra o site público. Esses casos limitam a robustez do tratamento de entradas e não demonstram, por si só, acesso indevido ou perda de dados. Não se declara ausência de bugs nem conformidade integral.
