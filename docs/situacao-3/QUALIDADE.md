@@ -32,6 +32,6 @@ Implementei as três melhorias concretas recebidas: mais cores, três novos sabo
 
 ## Estado atual — 06/11/2026
 
-Cinco avaliações recebidas, três melhorias publicadas, Word preenchido e dois vídeos não listados com links no Word. A suíte foi novamente executada localmente: 47 testes aprovados. O PDF das cinco opiniões ainda precisa ser consolidado e conferido. A entrega acadêmica será realizada pelo aluno.
+Cinco avaliações recebidas, três melhorias publicadas, Word preenchido e dois vídeos não listados com links no Word. A suíte foi novamente executada localmente: 47 testes aprovados. O PDF das cinco avaliações está concluído e disponível no material de entrega acadêmica. A entrega à faculdade permanece não realizada até a confirmação do envio no AVA.
 
 Na revisão local adicional, três entradas anormais produziram HTTP 500: token CSRF com caracteres não ASCII, quantidade com milhares de dígitos e identificador numérico além do intervalo SQLite. Permanecem sem correção por decisão do responsável nesta entrega; não foram testadas contra o site público. Esses casos limitam a robustez do tratamento de entradas e não demonstram, por si só, acesso indevido ou perda de dados. Não se declara ausência de bugs nem conformidade integral.
