@@ -25,12 +25,12 @@ Fontes: PIT_preenchido.pdf, páginas 1–3; material PIT I, páginas 27–49; ma
 | Dicionário de dados e domínios | PIT II p.31 | DADOS.md | Campos, nulidade, limites, chaves |
 | Front-end e back-end, MVC, tratamento de erros | PIT II p.32–34 | app/models.py, controllers.py, templates/static | Suíte em situacao-3/test-results.txt |
 | GitHub, código, bibliotecas e manual | PIT II p.32 e 38 | requirements.txt, README e MANUAL.md | Publicado em github.com/Fabos2005/doce-orbita-pit-ii; 36 arquivos de texto conferidos |
-| Vídeo inicial narrado pelo aluno, pelo menos 5 min | PIT II p.38 e template | ROTEIROS.md | Gravação pendente |
-| Cinco colegas ou profissionais, formulário e snapshots | PIT II p.35–36 e 39 | FORMULARIO.md | Coleta real pendente; Forms atualizado para cupcakes; anexos externos exigem consolidação |
+| Vídeo inicial narrado pelo aluno, pelo menos 5 min | PIT II p.38 e template | ROTEIROS.md | Publicado, não listado, 9min35s |
+| Cinco colegas ou profissionais, formulário e snapshots | PIT II p.35–36 e 39 | FORMULARIO.md | Cinco respostas reais recebidas; anexos externos exigem consolidação |
 | PDF com cinco opiniões e testes | PIT II p.39 | Após coleta real | Pendente; não fabricado |
-| Correções, melhorias pertinentes, documentação, retestes | PIT II p.35–39 | QUALIDADE.md | Correção técnica inicial registrada; feedback externo pendente |
-| Segundo vídeo mostrando mudanças, até 5 min | PIT II p.36/39 e template | ROTEIROS.md | Pendente após avaliações |
-| Word oficial preenchido com links | Template do AVA | PIT-II-Doce-Orbita-Atividade.docx | Links públicos preenchidos; avaliações e vídeos pendentes |
+| Correções, melhorias pertinentes, documentação, retestes | PIT II p.35–39 | QUALIDADE.md | Três melhorias após feedback publicadas; 47 testes aprovados |
+| Segundo vídeo mostrando mudanças, até 5 min | PIT II p.36/39 e template | ROTEIROS.md | Publicado, não listado, 3min18s |
+| Word oficial preenchido com links | Template do AVA | PIT-II-Doce-Orbita-Atividade.docx | Preenchido com avaliações e links dos dois vídeos |
 
 ## Decisões de implementação
 
@@ -42,4 +42,4 @@ O artigo indicado pelo briefing foi consultado: https://novonegocio.com.br/ideia
 
 ## Limites antes da entrega
 
-A aplicação não está autorizada para vendas reais. A hospedagem e os fluxos principais foram verificados. Faltam cinco avaliações reais, PDF das avaliações, vídeos e fechamento do laudo/Word. Não se declara conformidade integral até concluir a matriz com evidências. Recuperação de senha, limitador de tentativas distribuído, expiração automática de reservas, e-mails e pagamentos reais ficam fora da demonstração e devem ser considerados antes de operação comercial.
+A aplicação não está autorizada para vendas reais. A hospedagem e os fluxos principais foram verificados. As cinco avaliações, os vídeos e o Word estão disponíveis. Falta consolidar e conferir o PDF das avaliações. As limitações conhecidas estão registradas no laudo. Não se declara conformidade integral até concluir a matriz com evidências. Recuperação de senha, limitador de tentativas distribuído, expiração automática de reservas, e-mails e pagamentos reais ficam fora da demonstração e devem ser considerados antes de operação comercial.
