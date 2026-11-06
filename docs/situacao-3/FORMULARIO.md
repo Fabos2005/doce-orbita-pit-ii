@@ -20,7 +20,7 @@ Descrição: Estou avaliando meu projeto acadêmico de loja virtual de cupcakes.
 
 As opções objetivas reduzem a digitação; os campos descritivos preservam os detalhes necessários para registrar falhas, justificativas e propostas de melhoria. As listas de funções permitem várias respostas, mas a alternativa final deve ser marcada sozinha.
 
-Após receber cinco respostas reais, exportar e conferir cada resposta, associar evidências, reunir em PDF e preencher as cinco tabelas do Word. Não publicar nomes/contatos no GitHub sem autorização dos participantes; documentos acadêmicos com identificação podem ficar em link restrito acessível ao avaliador. Ainda não há cinco avaliações coletadas para a loja.
+Após receber cinco respostas reais, exportar e conferir cada resposta, associar evidências, reunir em PDF e preencher as cinco tabelas do Word. Não publicar nomes/contatos no GitHub sem autorização dos participantes; documentos acadêmicos com identificação podem ficar em link restrito acessível ao avaliador. As cinco avaliações já foram recebidas e registradas no Word. Falta consolidar e conferir o PDF das respostas individuais.
 
 ## Canal de arquivos e consulta das respostas
 
