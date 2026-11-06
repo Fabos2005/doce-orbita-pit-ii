@@ -21,4 +21,4 @@ E-mail repetido: use login ou outro dado de teste. Senhas divergentes: digite no
 
 ## Limites
 
-Sem vendas reais, gateway, transportadora, upload de cartão, estornos, cupom ou edição de pedido pago. As reservas pendentes permanecem até cancelamento manual. Em telas pequenas a interface usa coluna única. Horários exibidos estão em UTC. O site público atualizado e a avaliação visual ainda precisam ser verificados antes de enviar a colegas.
+Sem vendas reais, gateway, transportadora, upload de cartão, estornos, cupom ou edição de pedido pago. As reservas pendentes permanecem até cancelamento manual. Em telas pequenas a interface usa coluna única. Horários exibidos estão em UTC. O site atualizado foi verificado em desktop e largura de 390 px em 05/11/2026. Cinco avaliações foram recebidas. Consulte QUALIDADE.md para as limitações conhecidas.
