@@ -23,7 +23,7 @@ O escopo detalhado reúne as três situações-problema: especificação ágil c
 
 A implementação utiliza Python/Flask, HTML, CSS e JavaScript. A hospedagem gratuita utiliza banco persistente; nenhuma compra, cobrança ou entrega real ocorre. O pagamento é uma simulação didática local e não representa integração bancária. Essa delimitação deve ser validada com o tutor se for exigido um provedor externo.
 
-A validação compreende testes automatizados e funcionais no navegador, seguida de cinco avaliações reais por colegas de curso ou profissionais. As sugestões pertinentes serão incorporadas, documentadas e retestadas. Os dois vídeos serão narrados pelo aluno e os links reunidos no template Word oficial. Avaliações e resultados futuros não são antecipados como realizados.
+A validação reuniu testes automatizados e funcionais no navegador e cinco avaliações reais. As três sugestões concretas foram incorporadas, documentadas e retestadas. Os dois vídeos foram publicados como não listados e seus links constam no Word oficial. Falta consolidar e conferir o PDF das cinco opiniões. A entrega acadêmica será feita pelo aluno.
 
 ## Acessos
 
