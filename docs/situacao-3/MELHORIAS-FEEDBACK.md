@@ -10,7 +10,7 @@ Consultei as cinco respostas reais do formulário Avaliação da Doce Órbita �
 |2|Oferecer mais produtos no cardápio|Preparei Limão suave (R$ 12,90), Coco cremoso (R$ 13,90) e Doce de leite especial (R$ 14,90), com 30 unidades demonstrativas iniciais cada. Preservei chocolate, baunilha e morango.|
 |3|Mostrar a quantidade disponível também no carrinho|Passei a exibir o saldo livre atual por item e um aviso quando a quantidade selecionada supera o estoque. Mantive o cálculo de subtotal e a reserva apenas na confirmação do pedido.|
 
-A resposta 4 informou “Sem sugestões”; a resposta 5 escreveu “isso”, sem uma proposta concreta. Na pergunta sobre falhas, quatro participantes informaram não encontrar falhas e o quinto escreveu “isso”. Não interpretei essa resposta ambígua como validação do sistema.
+A resposta 4 informou “Sem sugestões”; a resposta 5 escreveu “isso”; em esclarecimento posterior, o responsável informou que o participante não tinha sugestões e preencheu o campo por ser obrigatório. Na pergunta sobre falhas, quatro participantes informaram não encontrar falhas e o quinto escreveu “isso”. Não interpretei essa resposta ambígua como validação do sistema.
 
 Revisei o PIT I entregue e o enunciado do PIT II: não identifiquei limite obrigatório de três sabores nem paleta imposta. Classifiquei as mudanças como melhorias de usabilidade e variedade, não como correções de defeitos relatados pelos participantes.
 
@@ -40,7 +40,7 @@ No Edge, verifiquei o catálogo em desktop e a 390 px, busca por Limão, inclus�
 
 Na primeira execução no servidor, a limpeza do banco temporário encontrou uma conexão SQLite ainda aberta. Corrigi o fechamento explícito com `contextlib.closing` na ampliação e no teste de backup. A tentativa falhou antes da publicação; repeti a suíte local e no servidor, com 47 aprovações. Preservei o registro da tentativa no diretório privado de staging. A versão anterior do site permaneceu ativa até o reteste passar.
 
-Preservei os PDFs de wireframes/mockups anteriores como evidência do planejamento. O detalhamento atualizado da interface está em `docs/situacao-1/INTERFACE.md`; os PDFs ainda não representam esta revisão de cores/cardápio. O Word final, PDF com as cinco opiniões e segundo vídeo continuam pendentes. O primeiro vídeo foi informado pelo aluno como gravado, com 9min35s; não o analisei. Não enviei nada à faculdade.
+Preservei os PDFs de wireframes/mockups anteriores como evidência do planejamento. O detalhamento atualizado da interface está em `docs/situacao-1/INTERFACE.md`; os PDFs ainda não representam esta revisão de cores/cardápio. O Word foi preenchido com as cinco avaliações e links dos dois vídeos, publicados como não listados (9min35s e 3min18s). Falta consolidar e conferir o PDF das cinco opiniões. Não enviei nada à faculdade.
 
 ## Roteiro de publicação e reversão
 
