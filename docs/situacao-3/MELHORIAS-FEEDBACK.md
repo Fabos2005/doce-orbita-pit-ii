@@ -40,7 +40,7 @@ No Edge, verifiquei o catálogo em desktop e a 390 px, busca por Limão, inclus�
 
 Na primeira execução no servidor, a limpeza do banco temporário encontrou uma conexão SQLite ainda aberta. Corrigi o fechamento explícito com `contextlib.closing` na ampliação e no teste de backup. A tentativa falhou antes da publicação; repeti a suíte local e no servidor, com 47 aprovações. Preservei o registro da tentativa no diretório privado de staging. A versão anterior do site permaneceu ativa até o reteste passar.
 
-Preservei os PDFs de wireframes/mockups anteriores como evidência do planejamento. O detalhamento atualizado da interface está em `docs/situacao-1/INTERFACE.md`; os PDFs ainda não representam esta revisão de cores/cardápio. O Word foi preenchido com as cinco avaliações e links dos dois vídeos, publicados como não listados (9min35s e 3min18s). Falta consolidar e conferir o PDF das cinco opiniões. Não enviei nada à faculdade.
+Preservei os PDFs de wireframes/mockups anteriores como evidência do planejamento. O detalhamento atualizado da interface está em `docs/situacao-1/INTERFACE.md`; os PDFs ainda não representam esta revisão de cores/cardápio. O Word foi preenchido com as cinco avaliações e links dos dois vídeos, publicados como não listados (9min35s e 3min18s). O PDF das cinco avaliações está concluído e disponível no material de entrega acadêmica. A entrega à faculdade permanece não realizada até a confirmação do envio no AVA.
 
 ## Roteiro de publicação e reversão
 
