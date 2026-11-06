@@ -25,7 +25,7 @@ Cliente: criar conta, buscar cupcake, selecionar quantidade, atualizar carrinho,
 - app: modelo, controladores, telas, estilos e banco físico.
 - docs/situacao-1: planejamento atualizado, histórias, UML, dados e interface.
 - docs/situacao-2: manual e roteiros.
-- docs/situacao-3: testes, formulário e laudo preliminar.
+- docs/situacao-3: testes, formulário, laudo e melhorias após feedback.
 - tests: suíte automatizada com bancos temporários.
 - deploy: WSGI para PythonAnywhere.
 
@@ -41,4 +41,11 @@ Código: https://github.com/Fabos2005/doce-orbita-pit-ii
 
 Avaliação: https://forms.cloud.microsoft/r/0q6yHsUuGE
 
-Não é necessário instalar Python para usar o site. Cada avaliador cria uma conta com dados fictícios. Cinco avaliações, vídeos e fechamento do Word permanecem pendentes.
+Não é necessário instalar Python para usar o site. Cada avaliador cria uma conta com dados fictícios. As cinco avaliações foram coletadas, as três melhorias foram publicadas e o Word foi preenchido com os links dos vídeos. Falta consolidar e conferir o PDF das cinco opiniões. Consulte o estado detalhado e as limitações conhecidas em [QUALIDADE.md](docs/situacao-3/QUALIDADE.md).
+
+## Vídeos da entrega
+
+- [Apresentação inicial (9min35s)](https://www.youtube.com/watch?v=_3d2BDXhaKE).
+- [Melhorias após os feedbacks (3min18s)](https://www.youtube.com/watch?v=FHVv_Q8VOn0).
+
+Vídeos não listados. Os links também constam no Word oficial. O envio acadêmico ainda será realizado pelo aluno.
